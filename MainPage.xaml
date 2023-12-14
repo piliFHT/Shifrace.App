@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shifrace.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            
+
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="Center">
+
+
+                <Label HorizontalOptions="Center"
+                   Text="Zadejte text k dešifrování/dešifrovaný text"
+                   />
+
+                <Editor x:Name="shifrace"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        WidthRequest="400"
+                        HeightRequest="100"
+                        HorizontalOptions="Center"/>
+
+                <Label HorizontalOptions="Center"
+                   Text="Zadejte text k zašifrování/rozšifrovaný text"
+                   />
+
+                <Editor x:Name="input"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        WidthRequest="400"
+                        HeightRequest="100"
+                        HorizontalOptions="Center"/>
+
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+            <Button Text="Šifrovat"
+                    HorizontalOptions="Center"
+                    x:Name="SifraceBtn"
+                    Clicked="SifraceBtn_Clicked"
+                    />
+                <Button Text="Dešifrovat"
+                        HorizontalOptions="Center"
+                        x:Name="DesifraceBtn"
+                        Clicked="DesifraceBtn_Clicked"
+                    />
+                <Button Text="Smazat"
+                        HorizontalOptions="Center"
+                        x:Name="Delete"
+                        Clicked="Delete_Clicked"
+                    />
+            </StackLayout>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
